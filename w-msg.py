@@ -2,30 +2,24 @@
 
 # Handles "Guia de fundos" with pandas them format FUnd`s name to put on GUI.
 
+# =====================================================================================
 import PySimpleGUI as sg
 import pandas as pd
-# =====================================================================================
 from easygui import *
-
-# from io import BytesIO
-# import requests
-
-# asdalsd
-
 
 df = pd.read_csv(
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vRAAEPTLdtgK6tmAAOffsYt69zSBtNJpGSMWe6-Jaz6Zh-YJrGtZuEechkkT_6BIY4Ou6Hr0p2CTgi2/pub?output=csv")
 
 df = df.set_index('FUNDO', drop=False)
-# df = df[df.Tributação != 'Renda Variável']
 
 choices = []
+
 for fundo in df['FUNDO']:
     choices.append(fundo)
 
 # =====================================================================================
 
-# UI Select fund`s name
+# User Interface
 
 # =====================================================================================
 
@@ -66,7 +60,7 @@ for fundo in list(choice):
 
 # =====================================================================================
 
-# Mais de um Fundo
+# ///
 
 # =====================================================================================
 
