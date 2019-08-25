@@ -46,22 +46,22 @@ for fundo in list(choice):
 
     if df5 == 'Renda Variável':
         sg.PopupScrolled(
-            """Fundo: *{0}*
-            *Rentabilidade*: {1} IBOV (início)
-            *IR*: incidirá no momento do resgate, à alíquota de 15/% sobre o lucro obtido.
-            *Liquidez*: D+{2}
-            *Categoria*: {3}
-            *Aplicacao Minima*: {4}""".format(df1, df3, df4, df6, df2),
+"""Fundo: *{0}*
+*Rentabilidade*: {1} IBOV (início)
+*IR*: incidirá no momento do resgate, à alíquota de 15/% sobre o lucro obtido.
+*Liquidez*: D+{2}
+*Categoria*: {3}
+*Aplicacao Minima*: {4}""".format(df1, df3, df4, df6, df2),
             title='Verificar', yes_no=True)
 
     else:
         sg.PopupScrolled(
-            """Fundo: *{0}*
-            *Rentabilidade*: {1} CDI (início)
-            *IR*: respeita a tabela regressiva de renda fixa (antecipação via come-cotas) 
-            *Liquidez*: D+{2}
-            *Categoria*: {3}
-            *Aplicacao Minima*: {4}""".format(df1, df3, df4, df6, df2),
+"""Fundo: *{0}*
+*Rentabilidade*: {1} CDI (início)
+*IR*: respeita a tabela regressiva de renda fixa (antecipação via come-cotas) 
+*Liquidez*: D+{2}
+*Categoria*: {3}
+*Aplicacao Minima*: {4}""".format(df1, df3, df4, df6, df2),
             title='Verificar', yes_no=True)
 
 # =====================================================================================
