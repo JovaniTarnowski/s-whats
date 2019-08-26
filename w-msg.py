@@ -41,11 +41,11 @@ for fundo in list(choice):
     if df5 == 'Renda Variável':
         sg.PopupScrolled(
 """Fundo: *{0}*
-*Rentabilidade*: {1} IBOV (início)
+*Rentabilidade*: IBOV + X (início)
 *IR*: incidirá no momento do resgate, à alíquota de 15/% sobre o lucro obtido.
-*Liquidez*: D+{2}
-*Categoria*: {3}
-*Aplicacao Minima*: {4}""".format(df1, df3, df4, df6, df2),
+*Liquidez*: D+{1}
+*Categoria*: {2}
+*Aplicacao Minima*: {3}""".format(df1, df4, df6, df2),
             title='Verificar', yes_no=True)
 
     else:
