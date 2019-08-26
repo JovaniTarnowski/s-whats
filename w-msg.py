@@ -66,23 +66,3 @@ for fundo in list(choice):
 # ///
 
 # =====================================================================================
-
-
-# for fundo in list(choice):
-#     # fundo_info = []
-#     df0 = df.CNPJ[fundo]
-#     df1 = df.FUNDO[fundo]
-#     df2 = df['Aplicação Inicial'][fundo]
-#     df3 = df.Desde_Início[fundo]
-#     df4 = df['Liquidez_total_(CotizaçãoLiquidação)'][fundo]
-#     df5 = df.Tributação[fundo]
-#     df6 = df.CVM[fundo]
-
-# sg.PopupScrolled(
-# """Fundo: *{0}*
-# *Rentabilidade*: {1} CDI (início)
-# *IR*: respeita a tabela regressiva de renda fixa (antecipação via come-cotas)
-# *Liquidez*: D+{2}
-# *Categoria*: {3}
-# *Aplicacao Minima*: {4}""".format(df1, df3, df4, df6, df2),
-# title='Verificar', yes_no=True)
