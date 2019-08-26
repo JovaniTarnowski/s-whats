@@ -3,15 +3,12 @@
 # Handles "Guia de fundos" with pandas them format FUnd`s name to put on GUI.
 
 # =====================================================================================
-import random
-
-.random.common
-.random.bounded_integers
-.random.entropy
-
 import PySimpleGUI as sg
 import pandas as pd
 from easygui import *
+import numpy.random.common
+import numpy.random.bounded_integers
+import numpy.random.entropy
 
 df = pd.read_csv(
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vRAAEPTLdtgK6tmAAOffsYt69zSBtNJpGSMWe6-Jaz6Zh-YJrGtZuEechkkT_6BIY4Ou6Hr0p2CTgi2/pub?output=csv")
