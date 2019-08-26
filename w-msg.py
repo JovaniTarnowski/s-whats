@@ -3,6 +3,7 @@
 # Handles "Guia de fundos" with pandas them format FUnd`s name to put on GUI.
 
 # =====================================================================================
+
 import PySimpleGUI as sg
 import pandas as pd
 from easygui import *
@@ -83,4 +84,3 @@ for fundo in list(choice):
 # *Categoria*: {3}
 # *Aplicacao Minima*: {4}""".format(df1, df3, df4, df6, df2),
 # title='Verificar', yes_no=True)
-
