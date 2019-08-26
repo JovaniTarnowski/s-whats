@@ -3,6 +3,12 @@
 # Handles "Guia de fundos" with pandas them format FUnd`s name to put on GUI.
 
 # =====================================================================================
+import random
+
+.random.common
+.random.bounded_integers
+.random.entropy
+
 import PySimpleGUI as sg
 import pandas as pd
 from easygui import *
