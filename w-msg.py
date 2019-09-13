@@ -55,6 +55,16 @@ for fundo in list(choice):
 *Liquidez*: D+{1}
 *Categoria*: {2}
 *Aplicacao Minima*: {3}""".format(df1, df4, df6, df2), title='Verificar', yes_no=True)
+
+        elif df5 == 'Debêntures Incentivadas':
+            sg.PopupScrolled(
+"""Fundo: *{0}* 
+*Rentabilidade*: {1} CDI (início)
+*IR*: isento 
+*Liquidez*: D+{2}
+*Categoria*: {3}
+*Aplicacao Minima*: {4}""".format(df1, df3, df4, df6, df2), title='Verificar', yes_no=True)
+
         else:
             sg.PopupScrolled(
 """Fundo: *{0}* 
@@ -77,6 +87,16 @@ for fundo in list(choice):
 *Categoria*: {2}
 *Aplicacao Minima*: {3}
 *Mais informacoes do fundo*: {4} """.format(df1, df4, df6, df2, df7), title='Verificar', yes_no=True)
+
+        elif df5 == 'Debêntures Incentivadas':
+            sg.PopupScrolled(
+"""Fundo: *{0}* 
+*Rentabilidade*: {1} CDI (início)
+*IR*: isento
+*Liquidez*: D+{2}
+*Categoria*: {3}
+*Aplicacao Minima*: {4}
+*Mais informacoes do fundo*: {5} """.format(df1, df3, df4, df6, df2, df7), title='Verificar', yes_no=True)
 
         else:
             sg.PopupScrolled(
