@@ -44,7 +44,7 @@ for fundo in list(choice):
         if df5 == 'Renda Variável':
             sg.PopupScrolled(
 """Fundo: *{0}* 
-*Rentabilidade*: IBOV + X (início)
+*Rentabilidade*: X % (início)
 *IR*: incidirá no momento do resgate, à alíquota de 15/% sobre o lucro obtido.
 *Liquidez*: D+{1}
 *Categoria*: {2}
@@ -72,7 +72,7 @@ for fundo in list(choice):
         if df5 == 'Renda Variável':
             sg.PopupScrolled(
 """Fundo: *{0}* 
-*Rentabilidade*: IBOV + X (início)
+*Rentabilidade*: X % (início)
 *IR*: incidirá no momento do resgate, à alíquota de 15/% sobre o lucro obtido.
 *Liquidez*: D+{1}
 *Categoria*: {2}
