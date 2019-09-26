@@ -10,6 +10,7 @@ import PySimpleGUI as sg
 import pandas as pd
 from easygui import *
 
+""" Read DB from Drive"""
 df = pd.read_csv(
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vRAAEPTLdtgK6tmAAOffsYt69zSBtNJpGSMWe6-Jaz6Zh-YJrGtZuEechkkT_6BIY4Ou6Hr0p2CTgi2/pub?output=csv")
 
@@ -36,7 +37,7 @@ for fundo in list(choice):
     df1 = df.FUNDO[fundo]
     df2 = df['Aplicação Inicial'][fundo]
     df3 = df.Desde_Início[fundo]
-    df4 = df['Liquidez_total_(CotizaçãoLiquidação)'][fundo]
+    df4 = int(df['Liquidez_total_(CotizaçãoLiquidação)'][fundo])
     df5 = df.Tributação[fundo]
     df6 = df.CVM[fundo]
     df7 = str(df.Lamina_fundo[fundo])
