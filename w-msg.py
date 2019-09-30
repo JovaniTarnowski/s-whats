@@ -15,12 +15,13 @@ df = pd.read_csv(
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vRAAEPTLdtgK6tmAAOffsYt69zSBtNJpGSMWe6-Jaz6Zh-YJrGtZuEechkkT_6BIY4Ou6Hr0p2CTgi2/pub?output=csv")
 
 df = df.set_index('FUNDO', drop=False)
-
+date = "08/09/2019"
 # =====================================================================================
 # User Interface
 # =====================================================================================
 
-msg = "Selecione os fundos"
+msg = "Selecione os fundos e CLIQUE OK - Rentabilidade fundos Atualizados dia {0} ".format(date)
+
 title = "Opções de investimento"
 
 choices = []
