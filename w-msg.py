@@ -20,7 +20,11 @@ date = "08/09/2019"
 # User Interface
 # =====================================================================================
 
-msg = "Selecione os fundos e CLIQUE OK - Rentabilidade fundos Atualizados dia {0} ".format(date)
+msg = """-- Selecione os fundos e CLIQUE OK 
+
+-- COPIE e COLE o Texto antes de fechar a Janela
+
+-- Rentabilidade fundos Atualizados dia {0}""".format(date)
 
 title = "Opções de investimento"
 
@@ -28,7 +32,6 @@ choices = []
 
 for fundo in df['FUNDO']:
     choices.append(fundo)
-
 
 choice = multchoicebox(msg, title, choices)
 
@@ -72,6 +75,16 @@ for fundo in list(choice):
 *Liquidez*: D+{2}
 *Categoria*: {3}
 *Aplicação Miníma*: {4}""".format(df1, df3, df4, df6, df2), title='Verificar', yes_no=True)
+
+    elif df1 == 'Opportunity Total FIC de FIM':
+        sg.PopupScrolled(
+"""Fundo: *{0}* 
+*Rentabilidade*: {1} CDI (início)
+*IR*: incidirá no momento do resgate, à alíquota de 15/% sobre o lucro obtido. 
+*Liquidez*: D+{2}
+*Categoria*: {3}
+*Aplicação Miníma*: {4}
+*Mais informações do fundo*: {5} """.format(df1, df3, df4, df6, df2, df7), title='Verificar', yes_no=True)
 
     else:
         if df5 == 'Renda Variável':
