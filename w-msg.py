@@ -56,7 +56,7 @@ for fundo in list(choice):
 *IR*: incidirá no momento do resgate, à alíquota de 15/% sobre o lucro obtido.
 *Liquidez*: D+{1}
 *Categoria*: {2}
-*Aplicação Miníma*: {3}""".format(df1, df4, df6, df2, df8), title='Verificar', yes_no=True)
+*Aplicação Miníma*: {3}""".format(df1, df4, df6, df2, df8), title='Verificar', yes_no=True, size=(80, 10))
 
         elif df5 == 'Debêntures Incentivadas':
             sg.PopupScrolled(
@@ -65,7 +65,7 @@ for fundo in list(choice):
 *IR*: isento 
 *Liquidez*: D+{2}
 *Categoria*: {3}
-*Aplicação Miníma*: {4}""".format(df1, df3, df4, df6, df2), title='Verificar', yes_no=True)
+*Aplicação Miníma*: {4}""".format(df1, df3, df4, df6, df2), title='Verificar', yes_no=True, size=(80, 10))
 
         else:
             sg.PopupScrolled(
@@ -74,7 +74,7 @@ for fundo in list(choice):
 *IR*: respeita a tabela regressiva de renda fixa (antecipação via come-cotas) 
 *Liquidez*: D+{2}
 *Categoria*: {3}
-*Aplicação Miníma*: {4}""".format(df1, df3, df4, df6, df2), title='Verificar', yes_no=True)
+*Aplicação Miníma*: {4}""".format(df1, df3, df4, df6, df2), title='Verificar', yes_no=True, size=(80, 10))
 
     elif df1 == 'Opportunity Total FIC de FIM':
         sg.PopupScrolled(
@@ -84,7 +84,7 @@ for fundo in list(choice):
 *Liquidez*: D+{2}
 *Categoria*: {3}
 *Aplicação Miníma*: {4}
-*Mais informações do fundo*: {5} """.format(df1, df3, df4, df6, df2, df7), title='Verificar', yes_no=True)
+*Mais informações do fundo*: {5} """.format(df1, df3, df4, df6, df2, df7), title='Verificar', yes_no=True, size=(80, 10))
 
     else:
         if df5 == 'Renda Variável':
@@ -95,7 +95,7 @@ for fundo in list(choice):
 *Liquidez*: D+{1}
 *Categoria*: {2}
 *Aplicação Miníma*: {3}
-*Mais informações do fundo*: {4} """.format(df1, df4, df6, df2, df7, df8), title='Verificar', yes_no=True)
+*Mais informações do fundo*: {4} """.format(df1, df4, df6, df2, df7, df8), title='Verificar', yes_no=True, size=(80, 10))
 
         elif df5 == 'Debêntures Incentivadas':
             sg.PopupScrolled(
@@ -105,7 +105,7 @@ for fundo in list(choice):
 *Liquidez*: D+{2}
 *Categoria*: {3}
 *Aplicação Miníma*: {4}
-*Mais informações do fundo*: {5} """.format(df1, df3, df4, df6, df2, df7), title='Verificar', yes_no=True)
+*Mais informações do fundo*: {5} """.format(df1, df3, df4, df6, df2, df7), title='Verificar', yes_no=True, size=(80, 10))
 
         else:
             sg.PopupScrolled(
@@ -115,4 +115,4 @@ for fundo in list(choice):
 *Liquidez*: D+{2}
 *Categoria*: {3}
 *Aplicação Miníma*: {4}
-*Mais informações do fundo*: {5} """.format(df1, df3, df4, df6, df2, df7), title='Verificar', yes_no=True)
+*Mais informações do fundo*: {5} """.format(df1, df3, df4, df6, df2, df7), title='Verificar', yes_no=True, size=(80, 10))
